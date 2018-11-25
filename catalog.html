@@ -12,10 +12,10 @@
       <a href="index.html" class="main-header-logo">Device</a>
 
       <section>
-        <form class="header-search">
+        <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
           <p>
             <label for="main-search" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" name="search" id="main-search" placeholder="Поиск по сайту">
+            <input type="search" id="main-search" name="search" placeholder="Поиск по сайту">
           </p>
           <button class="button search-button" type="submit">
             Найти
@@ -94,32 +94,32 @@
 
       <section class="filters">
         <h2>Фильтр:</h2>
-        <form action="#" class="filter" method="post">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <p class="filters-item">
             <label for="filters-price">Стоимость</label>
-            <input class="filters-price" id="filters-price" type="range" min="0" step="1" max="10000">
+            <input type="range" id="filters-price" class="filters-price" min="0" step="1" max="10000">
           </p>
           <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked="checked">
+                <input type="checkbox" id="black" class="visually-hidden filter-input filter-input-checkbox" name="black"  checked="checked">
                 <label for="black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
+                <input type="checkbox" id="white" class="visually-hidden filter-input filter-input-checkbox" name="white">
                 <label for="white">Белый</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked="checked">
+                <input type="checkbox" id="blue" class="visually-hidden filter-input filter-input-checkbox" name="blue" checked="checked">
                 <label for="blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked="checked">
+                <input type="checkbox" id="red" class="visually-hidden filter-input filter-input-checkbox" name="red" checked="checked">
                 <label for="red">Красный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
+                <input type="checkbox" id="pink" class="visually-hidden filter-input filter-input-checkbox" name="pink">
                 <label for="pink">Розовый</label>
               </li>
             </ul>
@@ -128,11 +128,11 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-option-bt" id="bt-true" value="bt-true" checked="checked">
+                <input type="radio" id="bt-true" class="visually-hidden filter-input filter-input-radio"  name="filter-option-bt" value="bt-true" checked="checked">
                 <label for="bt-true">Есть</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="filter-option-bt" id="bt-false" value="bt-false">
+                <input type="radio" id="bt-false" class="visually-hidden filter-input filter-input-radio"  name="filter-option-bt" value="bt-false">
                 <label for="bt-false">Нет</label>
               </li>
             </ul>
