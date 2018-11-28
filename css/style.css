@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/gilroyextrabold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/gilroylight.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/opensans.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+}
+
+a:visited {
+  color: rgba(0,0,0,1);
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  color: rgba(0,0,0,0.6);
+}
+
+.main-header a:active {
+  color: rgba(0,0,0,0.3);
+}
+
+.main-header-logo {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+}
+
+.main-header {
+  background-color: rgba(247,226,150,0.3);
+  }
+
+.main-header ul {
+    list-style: none;
+}
+.login-link,
+.shop-navigation {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(0,0,0,1);
+}
+
+.site-navigation {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+
+.site-navigation-item li > a {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+  text-transform: none;
+}
+
+.product-description b {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+.product-description p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(70,70,70,1);
+}
+
+.product-description ul {
+    list-style: none;
+}
+
+.specifications-list p:first-child {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: normal;
+  color: rgba(0,0,0,1);
+}
+
+.specifications-list p:last-child {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal;
+  color: rgba(70,70,70,1);
+}
+
+.container-slider .button,
+.about-us .button,
+.contacts .button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+
+  background: linear-gradient(rgba(255, 255, 255, 0) 35%, rgba(240, 197, 46, 1) 35%, rgba(240, 197, 46, 1) 65%, rgba(255, 255, 255, 0) 65%);
+  }
+
+.container-slider .button:hover,
+.container-slider .button:focus,
+.about-us .button:hover,
+.contacts .button:hover,
+.about-us .button:focus,
+.contacts .button:focus {
+background-color: rgba(240, 197, 46, 1);
+}
+
+.container-slider .button:active {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.container-products ul {
+    list-style: none;
+}
+
+/* Наши продукты */
+
+.services-delivery b,
+.services-warranty b,
+.services-credit b,
+.about-us h2,
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+.services-delivery p,
+.services-warranty p,
+.services-credit p,
+.about-us p,
+.contacts p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(70,70,70,1);
+}
+
+.about-us ul{
+  list-style: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+.main-footer {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,1);
+
+  background-color: rgba(70,70,70,1);
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-logo {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 0px;
+  font-weight: bold;
+  color: rgba(255,198,0,1);
+  text-transform: uppercase;
+}
+.footer-logo:hover,
+.footer-logo:focus {
+  color: rgba(255,198,0,0.7);
+}
+.footer-logo:active {
+  color: rgba(255,198,0,0.3);
+}
