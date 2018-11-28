@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -15,7 +17,7 @@
         <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
           <p>
             <label for="main-search" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" id="main-search" name="search"  placeholder="Поиск по сайту">
+            <input type="search" id="main-search" name="search" placeholder="Поиск по сайту">
           </p>
           <button class="button search-button visually-hidden" type="submit">
             Найти
@@ -40,7 +42,7 @@
       <nav class="main-navigation">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-item">
             <a href="catalog.html">Каталог товаров</a>
             <ul>
               <li>
@@ -121,10 +123,12 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
             <a href="#" class="button">Подробнее</a>
-            <div class="classification">
-              <p>48 часов</p>
-              <p>Без подзарядки</p>
-            </div>
+            <ul class="specifications-list">
+              <li>
+                <p>48 часов</p>
+                <p>Без подзарядки</p>
+              </li>
+            </ul>
           </section>
         </section>
         <section class="slider-slide-3">
@@ -273,6 +277,7 @@
         </button>
       </section>
     </main>
+
     <footer class="main-footer">
       <section>
         <b class="footer-logo">Device</b>
