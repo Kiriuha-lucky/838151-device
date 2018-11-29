@@ -125,9 +125,7 @@ a:visited {
   color: rgba(70,70,70,1);
 }
 
-.container-slider .button,
-.about-us .button,
-.contacts .button {
+.button {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -137,13 +135,48 @@ a:visited {
   background: linear-gradient(rgba(255, 255, 255, 0) 35%, rgba(240, 197, 46, 1) 35%, rgba(240, 197, 46, 1) 65%, rgba(255, 255, 255, 0) 65%);
   }
 
-.container-slider .button:hover,
-.container-slider .button:focus,
-.about-us .button:hover,
-.contacts .button:hover,
-.about-us .button:focus,
-.contacts .button:focus {
+.button:hover,
+.button:focus {
 background-color: rgba(240, 197, 46, 1);
+}
+
+.filter-button,
+.modal-write-us button {
+  border: none;
+}
+
+.search-button {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(0,0,0,1);
+
+  background: none;
+  border: 2px solid rgba(0,0,0,1);
+}
+
+.search-button:hover,
+.search-button:focus {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,1);
+
+  background-color: rgba(0,0,0,1);
+  border: 2px solid rgba(0,0,0,1);
+}
+
+.search-button:active {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.3);
+
+  background-color: rgba(0,0,0,1);
+  border: 2px solid rgba(0,0,0,1);
 }
 
 .container-slider .button:active {
@@ -278,4 +311,42 @@ color: rgba(0, 0, 0, 0.3);
 
 .pagination li {
   list-style: none;
+}
+
+.pagination-list li {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+
+.filters li {
+  list-style: none;
+}
+
+.filters h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+
+.filters-item label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+.filter-option label {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: normal;
+  color: rgba(0,0,0,1);
 }
