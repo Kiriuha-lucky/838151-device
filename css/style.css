@@ -199,6 +199,31 @@ color: rgba(0, 0, 0, 0.3);
   background-color: rgba(70,70,70,1);
 }
 
+.main-footer a {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.7);
+}
+
+.main-footer a:hover,
+.main-footer a:focus {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,1);
+}
+
+.main-footer a:active {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255,255,255,0.3);
+}
+
 .main-footer ul {
   list-style: none;
 }
@@ -217,4 +242,40 @@ color: rgba(0, 0, 0, 0.3);
 }
 .footer-logo:active {
   color: rgba(255,198,0,0.3);
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.catalog-catalog li {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: rgba(0,0,0,0.3);
+}
+
+.catalog-list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0,0,0,1);
+}
+
+.catalog-list span {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: rgba(70,70,70,1);
+}
+
+.pagination li {
+  list-style: none;
 }
