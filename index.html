@@ -11,9 +11,12 @@
   <body>
 
     <header class="main-header">
-      <a class="main-header-logo" name="top">Device</a>
+      <div class="container-header">
 
-      <section>
+
+      <a class="main-header-logo" name="top">Device</a>
+      <section class="container-header-first">
+        <div class="container">
         <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
           <p>
             <label for="main-search" class="visually-hidden">Поиск по сайту</label>
@@ -38,13 +41,13 @@
           </li>
         </ul>
       </section>
-
+   </div>
       <nav class="main-navigation">
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <ul class="site-navigation">
           <li class="site-navigation-item">
             <a href="catalog.html">Каталог товаров</a>
-            <ul>
+            <ul class="visually-hidden">
               <li>
                 <a href="#">Виртуальная реальность</a>
               </li>
@@ -76,6 +79,7 @@
           </li>
         </ul>
       </nav>
+      </div>
     </header>
 
     <main class="container">
