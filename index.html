@@ -68,13 +68,13 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="site-navigation-item">
               <a href="#">Доставка</a>
             </li>
-            <li>
+            <li class="site-navigation-item">
               <a href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="site-navigation-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -116,7 +116,7 @@
             </ul>
           </section>
         </section>
-        <section class="slide slider-slide-2">
+        <section class="slide slider-slide-2 visually-hidden">
           <h2 class="visually-hidden">Фитнес-браслет</h2>
           <div class="slide-image">
             <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
@@ -139,7 +139,7 @@
             </ul>
           </section>
         </section>
-        <section class="slide slider-slide-3">
+        <section class="slide slider-slide-3 visually-hidden">
           <h2 class="visually-hidden">Квадрокоптер</h2>
           <div class="slide-image">
             <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
@@ -254,7 +254,7 @@
           <a href="#" class="button">Напишите нам</a>
         </section>
       </section>
-      <section class="modal-write-us">
+      <section class="modal-write-us visually-hidden">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
           <p class="write-us-item">
@@ -275,7 +275,7 @@
           Закрыть
         </button>
       </section>
-      <section class="modal modal-map">
+      <section class="modal modal-map visually-hidden">
         <h2 class="visually-hidden">
           Как до нас добраться
         </h2>
@@ -289,56 +289,57 @@
     </main>
 
     <footer class="main-footer">
-      <section>
-        <a href="#top" class="footer-logo">Device</a>
-        <ul class="footer-user-navigation">
-          <li class="footer-login-link">
-            <a href="#">Войти</a>
-          </li>
-        </ul>
-        <ul class="footer-shop-navigation">
-          <li>
-            <a href="#">Сравнить</a>
-          </li>
-          <li>
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
-      </section>
+      <div class="main-footer-wrapper">
+        <section class="footer-logo-navigation">
+          <a href="#top" class="footer-logo">Device</a>
+          <ul class="footer-user-navigation">
+            <li class="footer-login-link">
+              <a href="#">Войти</a>
+            </li>
+          </ul>
+          <ul class="footer-shop-navigation">
+            <li>
+              <a href="#">Сравнить</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </section>
 
-      <section>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-services">
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <a href="tel:+79998887766" class="phone">+7(999)888-77-66</a>
-      </section>
+        <section class="footer-contacts-service">
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-services">
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <a href="tel:+79998887766" class="phone">+7(999)888-77-66</a>
+        </section>
 
-      <section>
-        <ul class="footer-social">
-          <li>
-            <a href="#" class="social-button">Фейсбук</a>
-          </li>
-          <li>
-            <a href="#" class="social-button">Инстаграм</a>
-          </li>
-          <li>
-            <a href="#" class="social-button">Твиттер</a>
-          </li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-HTML-Academy-logo">
-          <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy logo">
-        </a>
-      </section>
-
+        <section class="footer-social-academy">
+          <ul class="footer-social">
+            <li>
+              <a href="#" class="social-button">Фейсбук</a>
+            </li>
+            <li>
+              <a href="#" class="social-button">Инстаграм</a>
+            </li>
+            <li>
+              <a href="#" class="social-button">Твиттер</a>
+            </li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-HTML-Academy-logo">
+            <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy logo">
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 
