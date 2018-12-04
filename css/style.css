@@ -47,7 +47,7 @@ a:visited {
 }
 
 .main-header {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .container-header {
@@ -56,6 +56,20 @@ a:visited {
   width: 1160px;
   margin: 0 auto;
   background: linear-gradient(rgba(255, 255, 255, 1) 15%, rgba(247, 226, 150, 1) 15%);
+}
+
+.main-header-logo {
+  align-self: flex-start;
+  width: 200px;
+  margin-left: 56px;
+  margin-top: 17px;
+  margin-bottom: 0px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
 }
 
 .header-search {
@@ -69,6 +83,7 @@ a:visited {
   width: 260px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -77,6 +92,7 @@ a:visited {
   width: 220px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -89,21 +105,131 @@ a:visited {
 .site-navigation {
   width: 1040px;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   list-style: none;
 }
 
+/* .site-navigation-item:nth-child(2) {
+  margin-left: 50px;
+
+} */
+
 .container-header-first {
   display: flex;
+  align-items: center;
   width: 100%;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding: 0;
   padding: 0 60px;
+
 }
+
+.container-services {
+    background: linear-gradient(rgba(255, 255, 255, 1) 15%, rgba(229, 229, 229, 1) 15%);
+}
+
+.container-partners {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-bottom: 90px;
+}
+
+.container-information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about-us {
+  width: 580px;
+}
+.contacts {
+  width: 580px;
+}
+.main-footer {
+  margin-top: 10px;
+
+  font-family: "OpenSans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(70, 70, 70, 1);
+}
+
+.main-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-logo-navigation {
+  display: flex;
+  width: 1160px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 65px;
+  margin-bottom: 35px;
+
+  }
+
+.footer-user-navigation {
+  display: flex;
+  width: 230px;
+  margin-left: 520px;
+}
+
+.footer-shop-navigation {
+  display: flex;
+  width: 220px;
+  margin-left: 20px;
+}
+
+.footer-contacts-service {
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footer-services {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+
+  list-style: none;
+  }
+
+
+
+.footer-social-academy {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+    margin-bottom: 65px;
+}
+
+.footer-social {
+  display: flex;
+  width: 160px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  }
+
 
 .main-header a:hover,
 .main-header a:focus {
@@ -114,19 +240,7 @@ a:visited {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header-logo {
-  align-self: flex-start;
-  width: 200px;
-  margin-left: 60px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-size: 48px;
-  line-height: 48px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 1);
-}
+
 
 .container {
   width: 1160px;
@@ -135,11 +249,15 @@ a:visited {
 
 .container-slider {
   width: 100%;
+
+
 }
 
 .slide {
   display: flex;
   width: 100%;
+
+  background: linear-gradient(rgba(247, 226, 150, 1) 20%, rgba(255, 255, 255, 1) 20%);
 }
 
 .slide-image {
@@ -364,14 +482,7 @@ a:visited {
   color: rgba(0, 0, 0, 1);
 }
 
-.main-footer {
-  font-family: "OpenSans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(70, 70, 70, 1);
-}
+
 
 .main-footer a {
   font-family: "OpenSans", Arial, sans-serif;
@@ -405,7 +516,7 @@ a:visited {
 .main-footer .footer-logo {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  line-height: 0px;
+  line-height: 48px;
   font-weight: bold;
   color: rgba(255, 198, 0, 1);
   text-transform: uppercase;
@@ -415,7 +526,7 @@ a:visited {
 .main-footer .footer-logo:focus {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  line-height: 0px;
+  line-height: 48px;
   font-weight: bold;
   color: rgba(255, 198, 0, 0.7);
   text-transform: uppercase;
@@ -424,7 +535,7 @@ a:visited {
 .main-footer .footer-logo:active {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
-  line-height: 0px;
+  line-height: 48px;
   font-weight: bold;
   color: rgba(255, 198, 0, 0.3);
   text-transform: uppercase;
