@@ -1,20 +1,20 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/gilroyextrabold.woff2");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("fonts/gilroylight.woff2");
+  src: url("../fonts/gilroylight.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("fonts/opensans.woff2");
+  src: url("../fonts/opensans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -57,6 +57,7 @@ a:visited {
   flex-direction: column;
   width: 1160px;
   margin: 0 auto;
+
   background: linear-gradient(rgba(255, 255, 255, 1) 15%, rgba(247, 226, 150, 1) 15%);
 }
 
@@ -78,6 +79,7 @@ a:visited {
   width: 440px;
   margin: 0;
   padding: 0;
+  margin-right: 100px;
 }
 
 .user-navigation {
@@ -90,6 +92,7 @@ a:visited {
 
 .shop-navigation {
   display: flex;
+  justify-content: flex-end;
   width: 220px;
   margin: 0;
   padding: 0;
@@ -100,11 +103,13 @@ a:visited {
   width: 100%;
   margin-left: 60px;
   margin-right: 60px;
+  margin-bottom: 25px;
 }
 
 .site-navigation {
   width: 1040px;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -117,12 +122,13 @@ a:visited {
 } */
 .container-header-first {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin: 0;
+  width: 1040px;
+  margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
-  padding: 0 60px;
+
 }
 
 .container-services {
@@ -194,7 +200,7 @@ a:visited {
 
 .footer-contacts-service {
   display: flex;
-  width: 1200px;
+  width: 1160px;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
@@ -212,7 +218,7 @@ a:visited {
 .footer-social-academy {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   margin-bottom: 65px;
 }
@@ -261,6 +267,13 @@ a:visited {
   width: 580px;
 }
 
+.product-description hr {
+  width: 100px;
+  height: 7px;
+  background-color: rgba(255,255,255,1);
+  border: none;
+}
+
 .specifications-list {
   display: flex;
   margin: 0;
@@ -273,12 +286,25 @@ a:visited {
 }
 
 .product-description {
-  width: 580px;
+  width: 540px;
+  padding: 0 20px;
 }
+
+
 
 .container-products {
   width: 1160px;
   margin: 0 auto;
+}
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+
+
 }
 
 .container-products-list {
@@ -735,4 +761,27 @@ a:visited {
 
 .catalog-item:nth-child(2n) {
   margin-left: 40px;
+}
+
+.pagination {
+  width: 760px;
+  margin:0 auto;
+
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 0;
+  padding: 20px 30px;
+
+  list-style: none;
+}
+
+.pagination-list li:nth-child(2) {
+  margin-left: 30px;
 }
