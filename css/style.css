@@ -99,10 +99,14 @@ align-items: center;
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1040px;
   margin: 0 auto;
   margin-top: 27px;
   margin-bottom: 160px;
+  padding: 0 60px;
   outline: 2px solid green;
 }
 
@@ -183,9 +187,9 @@ align-items: center;
 }
 
 .site-navigation {
-  width: 1040px;
-  display: flex;
-  justify-content: space-between;
+  width: 300px;
+
+
   margin: 0;
   padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
@@ -197,17 +201,105 @@ align-items: center;
   list-style: none;
 }
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.delivery-varanty {
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-wrapper a {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 120px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
 .main-footer-wrapper path {
 fill: #ffc600;
 }
 
-.site-navigation-item li>a {
+
+
+.site-navigation>li {
+  display: inline-block;
+position: relative;
+font-family: "Gilroy", Arial, sans-serif;
+font-size: 18px;
+line-height: 24px;
+font-weight: bold;
+color: rgba(0, 0, 0, 1);
+text-transform: uppercase;
+list-style: none;
+z-index: 20;
+letter-spacing: 3.5px;
+
+outline: 2px solid green;
+
+}
+
+.sub-menu {
+  padding: 0;
+  margin: 0;
+  margin-left: -60px;
+  list-style: none;
+  position: absolute;
+  width: 1040px;
+  padding: 30px 60px;
+  display: none ;
+  z-index: 15;
+
+  background-color: rgba(247,225,132,1);
+}
+
+
+
+.site-navigation-item>a::after {
+  margin-top: 3px;
+  margin-left: 12px;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  vertical-align: center;
+
+background-image: url("../img/plus.svg");
+background-repeat: no-repeat;
+background-position: 50% 50%;
+
+
+
+}
+
+.sub-menu li {
+
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: normal;
   color: rgba(0, 0, 0, 1);
   text-transform: none;
+  letter-spacing: 0;
+}
+
+.site-navigation > li:hover .sub-menu {
+  display: block;
 }
 
 .user-navigation a {
@@ -297,10 +389,6 @@ background-color: red;
   display: flex;
   flex-direction: column;
   margin-top: -90px;
-
-
-
-
 }
 
 
@@ -478,6 +566,26 @@ background-color: red;
   letter-spacing: 3px;
 }
 
+.footer-services a:hover,
+.footer-services a:focus {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer-services a:active {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 .footer-contacts-service p {
   padding: 0;
   margin: 0;
@@ -778,7 +886,11 @@ container-slider
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  /* background: linear-gradient(rgba(255, 255, 255, 0) 37.5%, rgba(240, 197, 46, 1) 37.5%, rgba(240, 197, 46, 1) 62.5%, rgba(255, 255, 255, 0) 62.5%); */
+  letter-spacing: 2px;
+  background: linear-gradient(rgba(255, 255, 255, 0) 45%,
+                              rgba(240, 197, 46, 1) 45%,
+                              rgba(240, 197, 46, 1) 55%,
+                              rgba(255, 255, 255, 0) 55%);
 }
 
 .button:hover,
@@ -791,7 +903,12 @@ container-slider
   border: none;
 }
 
+.button-about-us,
+.button-contacts {
+  width: 260px;
 
+
+}
 
 .container-products ul {
   list-style: none;
@@ -1111,4 +1228,35 @@ margin-bottom: 62px;
 
 .pagination-list li:nth-child(2) {
   margin-left: 30px;
+}
+
+.footer-social {
+  display: flex;
+  width: 160px;
+  margin-right: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-button path {
+  fill: #7e7e7e;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #b5b5b5;
+}
+
+.social-button:active path {
+  fill: #595959;
+}
+
+.footer-social-academy hr {
+  margin: 0;
+  margin-top: 14px;
+  padding: 0;
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: rgba(255,198,0,1);
 }
