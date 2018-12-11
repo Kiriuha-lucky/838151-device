@@ -331,16 +331,47 @@ background-color: red;
 .container-slider {
   position:relative;
   width: 1160px;
+  height: 500px;
   margin: 0 auto;
   margin-bottom: 293px;
   margin-top: -110px;
 
 }
 
+.slider-controls {
+  position: absolute;
+  right: 82px;
+  top: 355px;
+  z-index: 15;
+}
+
+
 .container-slider input[type="radio"] {
   display: none;
 }
 
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.slider-slide-1 {
+
+  opacity: 0;
+}
+
+.slider-slide-2 {
+
+    opacity: 0;
+}
+
+.slider-slide-3 {
+
+    opacity: 0;
+}
 .slider-controls label {
   display: inline-block;
   margin: 0 10px;
@@ -351,16 +382,28 @@ background-color: red;
   cursor: pointer;
 }
 
-.slide {
-  display: flex;
-  width: 100%;
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  box-shadow: 0 0 2px rgba(255, 0, 0, 1);
 }
 
-.slider-navigation {
-  position: absolute;
-  right: 82px;
-  top: 355px;
+#btn-1:checked ~ .slider-wrapper .slider-slide-1 {
+opacity: 1;
 }
+
+#btn-2:checked ~ .slider-wrapper .slider-slide-2 {
+  opacity: 1;
+}
+
+#btn-3:checked ~ .slider-wrapper .slider-slide-3 {
+opacity: 1;
+}
+
+
+
+
+
 
 .container-slider .button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -389,6 +432,9 @@ background-color: red;
   display: flex;
   flex-direction: column;
   margin-top: -90px;
+  z-index: 5;
+
+  outline: 2px solid green;
 }
 
 
@@ -647,6 +693,8 @@ background-color: red;
   width: 490px;
   margin: 0 auto;
   margin-top: -10px;
+
+  outline: 2px solid red;
 }
 
 .slide-decoration p {
@@ -672,7 +720,7 @@ background-color: red;
   top: 48px;
   left: -332px;
 
-  z-index: 5;
+  z-index: 2;
 }
 
 .specifications-list {
@@ -737,34 +785,35 @@ container-slider
   width: 160px;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
 
   left: 0;
   top: 0;
 }
 
- .product a:nth-child(1)::before {
+ .product-1 a::before {
   background-image: url("../img/popular-1.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
   }
 
-.product a:nth-child(2)::before {
+.product-2 a::before {
   background-image: url("../img/popular-2.svg");
 }
 
-.product a:nth-child(3)::before {
+.product-3 a::before {
   background-image: url("../img/popular-3.svg");
 }
 
-.product a:nth-child(4):before {
+.product-4 a::before {
   background-image: url("../img/popular-4.svg");
 }
 
-.product a:nth-child(5):before {
+.product-5 a::before {
   background-image: url("../img/popular-5.svg");
 }
 
-.product a:nth-child(6):before {
+.product-6 a::before {
   background-image: url("../img/popular-6.svg");
 }
 
