@@ -91,7 +91,7 @@
     <main >
       <div class="container">
         <section class="container-slider">
-          <div class="slider-navigation">
+          <!-- <div class="slider-navigation"> -->
             <input type="radio" id="btn-1" name="toggle" checked>
             <input type="radio" id="btn-2" name="toggle">
             <input type="radio" id="btn-3" name="toggle">
@@ -100,8 +100,10 @@
                  <label for="btn-2"></label>
                  <label for="btn-3"></label>
                </div>
-          </div>
+          <!-- </div> -->
+
           <h2 class="visually-hidden">Слайдер товаров</h2>
+          <div class="slider-wrapper">
           <section class="slide slider-slide-1 ">
                           <h2 class="visually-hidden">Селфи-палка</h2>
             <div class="slide-image">
@@ -139,7 +141,7 @@
               </div>
             </section>
           </section>
-          <section class="slide slider-slide-2 visually-hidden">
+          <section class="slide slider-slide-2 ">
             <h2 class="visually-hidden">Фитнес-браслет</h2>
             <div class="slide-image">
               <img src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
@@ -148,6 +150,7 @@
               <div class="slide-decoration">
                 <p>02</p>
               </div>
+              <div class="product-description-content">
               <h2 class="visually-hidden">Описание товара</h2>
               <b>Худеем
                 <br>
@@ -163,14 +166,19 @@
                   <p>Без подзарядки</p>
                 </li>
               </ul>
+            </div>
             </section>
           </section>
-          <section class="slide slider-slide-3 visually-hidden">
+          <section class="slide slider-slide-3 ">
             <h2 class="visually-hidden">Квадрокоптер</h2>
             <div class="slide-image">
               <img src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             </div>
             <section class="product-description">
+              <div class="slide-decoration">
+                <p>03</p>
+              </div>
+              <div class="product-description-content">
               <h2 class="visually-hidden">Описание товара</h2>
               <b>Порхает как бабочка,
                 <br>
@@ -190,32 +198,35 @@
                   <p>Радиус поражения</p>
                 </li>
               </ul>
+            </div>
             </section>
           </section>
+          </div>
+
         </section>
 
         <section class="container-products ">
           <h2 class="visually-hidden">Наши продукты</h2>
           <ul class="container-products-list">
-            <li class="product">
+            <li class="product product-1">
 
               <a href="#">
                 Виртуальная реальность
               </a>
             </li>
-            <li class="product">
+            <li class="product product-2">
               <a href="#">Моноподы для селфи</a>
             </li>
-            <li class="product">
+            <li class="product product-3">
               <a href="#">Экшн-камеры</a>
             </li>
-            <li class="product">
+            <li class="product product-4">
               <a href="#">Фитнес-браслеты</a>
             </li>
-            <li class="product">
+            <li class="product product-5">
               <a href="#">Умные часы</a>
             </li>
-            <li class="product">
+            <li class="product product-6">
               <a href="#">Квадрокоптеры</a>
             </li>
           </ul>
