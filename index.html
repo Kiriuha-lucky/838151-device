@@ -18,7 +18,7 @@
           <!-- <div class="container"> -->
           <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
           <p>
-              <label for="main-search" class="visually-hidden">Поиск по сайту</label>
+              <label for="main-search" >Поиск по сайту</label>
               <input type="search" class="search" id="main-search" name="search" placeholder="Поиск по сайту">
             </p>
             <button class=" search-button" type="submit">
@@ -51,7 +51,8 @@
           <ul class="site-navigation">
             <li class="site-navigation-item">
               <a href="catalog.html">Каталог товаров</a>
-              <ul class="sub-menu">
+              <div class="sub-menu">
+                <ul>
                 <li>
                   <a href="#">Виртуальная реальность</a>
                 </li>
@@ -61,16 +62,21 @@
                 <li>
                   <a href="#">Экшн-камеры</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">Фитнес-браслеты</a>
                 </li>
                 <li>
                   <a href="#">Умные часы</a>
                 </li>
+              </ul>
+              <ul>
                 <li>
                   <a href="#">Квадракоптеры</a>
                 </li>
               </ul>
+              </div>
             </li>
           </ul>
           <div class="nav-wrapper">
@@ -270,10 +276,22 @@
       <div class="container">
         <section class="container-partners">
           <h2 class="visually-hidden">Наши партнеры</h2>
-          <a href="#"><img src="img/logo-1.jpg" alt="Фирма Dji" width="260" height="100"></a>
-          <a href="#"><img src="img/logo-2.jpg" alt="Фирма SP Gadgets" width="260" height="100"></a>
-          <a href="#"><img src="img/logo-3.jpg" alt="Фирма Go Pro" width="260" height="100"></a>
-          <a href="#"><img src="img/logo-4.jpg" alt="Фирма Vive" width="260" height="100"></a>
+          <a href="#" class="firms">
+            <img src="img/logo-1.jpg" alt="Фирма Dji" width="260" height="100">
+            <img src="img/logo-1_hover.jpg" alt="Фирма Dji" width="260" height="100">
+          </a>
+          <a href="#" class="firms">
+            <img src="img/logo-2.jpg" alt="Фирма SP Gadgets" width="260" height="100">
+            <img src="img/logo-2_hover.jpg" alt="Фирма SP Gadgets" width="260" height="100">
+          </a>
+          <a href="#" class="firms">
+            <img src="img/logo-3.jpg" alt="Фирма Go Pro" width="260" height="100">
+            <img src="img/logo-3_hover.jpg" alt="Фирма Go Pro" width="260" height="100">
+          </a>
+          <a href="#" class="firms">
+            <img src="img/logo-4.jpg" alt="Фирма Vive" width="260" height="100">
+            <img src="img/logo-4_hover.jpg" alt="Фирма Vive" width="260" height="100">
+          </a>
         </section>
 
         <section class="container-information">
