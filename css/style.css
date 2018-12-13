@@ -1443,16 +1443,47 @@ margin-top: -4px;
   width: 10px;
   height: 10px;
 
-  background-color: #000000;
+  background-color: rgba(0,0,0,1);
   border-radius: 50%;
   z-index: 2;
 }
 
+.radio + label:hover:before,
+.radio + label:focus:before {
+  border: 3px solid rgba(0,0,0,0.6);
+
+}
+
+.radio:checked + label:hover:after,
+.radio:checked + label:focus:after {
+  background-color: rgba(0,0,0,0.6);
+
+}
+
+.radio:disabled + label:before,
+.radio:disabled + label:hover:before,
+.radio:disabled + label:focus:before {
+
+  border: 3px solid rgba(0,0,0,0.25);
+
+}
+
+.radio:disabled + label:after,
+.radio:disabled + label:hover:after,
+.radio:disabled + label:focus:after {
+  background-color: rgba(0,0,0,0.25);
+}
+
+.radio:disabled + label{
+  color: rgba(166,166,166,1);
+}
+
 .catalog {
   width: 900px;
-
   background-color: rgba(255, 255, 255, 1);
 }
+
+
 
 .filters-catalog-title {
   margin-top: 50px;
@@ -1714,19 +1745,30 @@ height: 380px;
   }
 
 .catalog-item-modal {
+position: relative;
+width: 360px;
+height: 380px;
+cursor: pointer;
+}
+
+
+
+
+
+.class {
   position: absolute;
   width: 360px;
   height: 380px;
   top: 0;
   left: 0;
   background-color: rgba(238,238,238,0.7) ;
- /* display: none; */
+
+   display: none;
 }
 
+.catalog-item-modal:hover ~ .class52  {
 
-
-.catalog-item + img:hover ~ .catalog-item-modal{
-  display: flex;
-  z-index:3;
+display: block;
+z-index: 5;
 
 }
