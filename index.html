@@ -18,7 +18,7 @@
           <!-- <div class="container"> -->
           <form class="header-search" method="get" action="https://echo.htmlacademy.ru">
 
-              <label for="main-search" class="visually-hidden" >Поиск по сайту</label>
+              <label for="main-search"  >Поиск по сайту</label>
               <input type="search" class="search" id="main-search" name="search" placeholder="Поиск по сайту">
 
             <button class="search-button" type="submit">
@@ -238,16 +238,20 @@
           </ul>
         </section>
       </div>
+
       <section class="container-services">
         <div class="container-services-wrapper">
           <h2 class="visually-hidden">Сервисы</h2>
-          <ul class="services-list">
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
-          </ul>
-          <section class="services">
-            <section class="services-delivery">
+                    <input type="radio" name="point" id="slide1" checked>
+                  	<input type="radio" name="point" id="slide2">
+                  	<input type="radio" name="point" id="slide3">
+          <div class="controls-2">
+            <label for="slide1">Доставка</label>
+            <label for="slide2">Гарантия</label>
+            <label for="slide3">Кредит</label>
+          </div>
+          <section class="slider-2">
+            <section class="slides-2 slide2-1">
               <h2 class="visually-hidden">Доставка</h2>
               <b>Доставка</b>
               <p>
@@ -256,14 +260,14 @@
                  заработаем, поднимая его на ваш этаж.
               </p>
             </section>
-            <section class="services-warranty visually-hidden">
+            <section class="slides-2 slide2-2">
               <h2 class="visually-hidden">Гарантия</h2>
               <b>Гарантия</b>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
               </p>
             </section>
-            <section class="services-credit visually-hidden">
+            <section class="slides-2 slide2-3">
               <h2 class="visually-hidden">Кредит</h2>
               <b>Кредит</b>
               <p>
@@ -273,6 +277,9 @@
           </section>
         </div>
       </section>
+      <div class="gray">
+        </div>
+
       <div class="container">
         <section class="container-partners">
           <h2 class="visually-hidden">Наши партнеры</h2>
@@ -312,14 +319,15 @@
           <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
+            <a href="#" class="map-image"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
             <a href="#" class="button button-contacts">Напишите нам</a>
           </section>
         </section>
       </div>
-      <section class="modal-write-us visually-hidden">
+      <section class="modal modal-write-us ">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
+          <div class="name-mail">
           <p class="write-us-item">
             <label for="write-us-name-surname">Ваше имя:</label>
             <input type="text" id="write-us-name-surname" name="name-surname" value="" placeholder="Имя Фамилия">
@@ -328,22 +336,25 @@
             <label for="write-us-e-mail">Ваш e-mail:</label>
             <input type="email" id="write-us-e-mail" name="e-mail" value="" placeholder="email@example.com">
           </p>
+          </div>
           <p class="write-us-item">
             <label for="write-us-text">Текст письма:</label>
             <textarea name="write-us-text" id="write-us-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button button-write-us" type="submit">Отправить</button>
         </form>
-        <button class="write-us-close" type="button">
+        <button class="modal-map-close" type="button">
           Закрыть
         </button>
       </section>
-      <section class="modal modal-map visually-hidden">
+      <section class="modal modal-map">
         <h2 class="visually-hidden">
           Как до нас добраться
         </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.090633688204!2d37.52868459004749!3d55.68741200171055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1544957289203" width="960" height="559" allowfullscreen></iframe>
+
         <p>
-          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
+          <img src="img/map-big.jpg"  width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Москва">
         </p>
         <button class="modal-map-close" type="button">
           Закрыть
@@ -426,6 +437,51 @@
         </section>
       </div>
     </footer>
+
+    <script>
+      var write = document.querySelector(".button-contacts");
+      var popup = document.querySelector(".modal-write-us");
+       var close = popup.querySelector(".modal-map-close");
+
+       var name = popup.querySelector("[name=name-surname]");
+
+      write.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      name.focus();
+    });
+
+    close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+
+  var mapLink = document.querySelector(".map-image");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-map-close");
+
+  mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+    </script>
+
+
   </body>
 
 </html>
