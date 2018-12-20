@@ -27,6 +27,7 @@ body {
   line-height: 30px;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.01em;
 }
 
 /* img {
@@ -74,7 +75,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  width: 1040px;
+  width: 1044px;
   margin: 0 auto;
   padding: 0;
   margin-top: -25px;
@@ -84,6 +85,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.01em;
   /* outline: 2px solid green; */
 }
 
@@ -357,8 +359,17 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
+
+
+.header-search:focus .search-button,
+.header-search:active .search-button
+ {
+  display: block;
+}
+
 .header-search .search:focus+.search-button,
-.header-search .search:active+.search-button {
+.header-search .search:active+.search-button
+ {
   display: block;
 }
 
@@ -458,6 +469,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
   z-index: 2;
+  letter-spacing: 0.01em;
 }
 
 .product-description p {
@@ -469,6 +481,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: normal;
   color: rgba(70, 70, 70, 1);
+  /* letter-spacing: 0.01em; */
 }
 
 .product-description-content {
@@ -616,6 +629,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   width: 428px;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0 6px;
 }
@@ -675,6 +689,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   width: 160px;
   margin: 0;
   padding: 0;
@@ -808,13 +823,22 @@ input[type="radio"].visually-hidden {
   top: 0;
 }
 
-.product-1 a::before {
+.product a::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-image: url("../img/popular-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  top: 0;
+}
+
+.product-1 a::after {
   background-image: url("../img/popular-1.svg");
 }
 
-.product-1 a:active::before {
-  background-image: url("../img/popular-1-1.svg");
-}
 
 .product a:hover::before,
 .product a:focus::before,
@@ -822,45 +846,38 @@ input[type="radio"].visually-hidden {
   background-color: rgba(240, 197, 46, 1);
 }
 
-.product-2 a::before {
+.product-2 a::after {
   background-position: 50% 100%;
   background-image: url("../img/popular-2.svg");
 }
 
-.product-2 a:active::before {
-  background-image: url("../img/popular-2-1.svg");
-}
 
-.product-3 a::before {
+
+.product-3 a::after {
   background-image: url("../img/popular-3.svg");
 }
 
-.product-3 a:active::before {
-  background-image: url("../img/popular-3-1.svg");
-}
 
-.product-4 a::before {
+
+.product-4 a::after {
   background-image: url("../img/popular-4.svg");
 }
 
-.product-4 a:active::before {
-  background-image: url("../img/popular-4-1.svg");
-}
 
-.product-5 a::before {
+
+.product-5 a::after {
   background-image: url("../img/popular-5.svg");
 }
 
-.product-5 a:active::before {
-  background-image: url("../img/popular-5-1.svg");
-}
 
-.product-6 a::before {
+
+.product-6 a::after {
   background-image: url("../img/popular-6.svg");
 }
 
-.product-6 a:active::before {
-  background-image: url("../img/popular-6-1.svg");
+
+.product a:active::after {
+  opacity: 0.3;
 }
 
 .gray {
@@ -918,7 +935,7 @@ input[type="radio"].visually-hidden {
     rgba(255, 255, 255, 0) 55%);
   border: none;
   cursor: pointer;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
 }
 
 .button:hover,
@@ -1264,7 +1281,7 @@ input[type="radio"].visually-hidden {
 
 .color label:hover:before,
 .color label:focus:before {
-  background-image: url("../img/checkbox-off-60.svg");
+  opacity: 0.6;
 }
 
 .color label:active:before {
@@ -1280,7 +1297,7 @@ input[type="radio"].visually-hidden {
 
 .checkbox:checked+label:hover:before,
 .checkbox:checked+label:focus:before {
-  background-image: url("../img/checkbox-on-60.svg");
+  opacity: 0.6;
 }
 
 .checkbox:checked+label:active:before {
@@ -1289,7 +1306,7 @@ input[type="radio"].visually-hidden {
 
 .checkbox:disabled+label:before {
   background-position: 0 0;
-  background-image: url("../img/checkbox-off-25.svg");
+  opacity: 0.25;
   color: rgba(166, 166, 166, 1);
 }
 
@@ -1299,7 +1316,7 @@ input[type="radio"].visually-hidden {
 
 .checkbox:checked:disabled+label:before {
   background-position: 0 0;
-  background-image: url("../img/checkbox-on-25.svg");
+  opacity: 0.25;
   color: rgba(166, 166, 166, 1);
 }
 
@@ -1488,6 +1505,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: 35px;
 }
 
@@ -1872,15 +1890,17 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-2 b {
+  display: block;
   position: relative;
   padding: 0;
   margin: 0;
-  margin-top: 15px;
+  margin-top: -5px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 47px;
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.02em;
 }
 
 .slider-2 b:after {
