@@ -32,7 +32,7 @@
                 <a href="#">Валентин Петухов</a>
               </li>
               <li>
-                <a href="#">Выйти</a>
+                <a href="#" class="exit">Выйти</a>
               </li>
             </ul>
             <ul class="shop-navigation">
@@ -119,11 +119,27 @@
           <h3>Фильтр:</h3>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
-            <p class="filters-item">
-              <label for="filters-price">Стоимость</label>
-              <input type="range" id="filters-price" class="filters-price" min="0" step="1" max="10000">
-            </p>
-            <fieldset >
+            <fieldset class="filter-item">
+                    <legend class="visually-hidden">Стоимость:</legend>
+<b >Стоимость</b>
+
+                    <div class="range-filter">
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
+                      </div>
+                      <div class="price-controls">
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                        <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+
+            <fieldset class="filter-item">
               <legend class="visually-hidden">Цвет</legend>
               <b>Цвет</b>
               <ul class="color">
@@ -149,7 +165,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-item bluetooth">
               <legend class="visually-hidden">Bluetooth</legend>
               <b>Bluetooth</b>
               <ul class="bluetooth">
@@ -188,10 +204,14 @@
               </ul>
               <ul class="indicator">
                 <li >
+                  <a href="#" class="indicator-item">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                  </a>
                 </li>
                 <li class="active">
+                  <a href="#" class="indicator-item">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -199,7 +219,7 @@
             <ul class="catalog-list">
               <li class="catalog-item">
                 <div class="catalog-item-modal">
-                  <div class="new-item visually-hidden">NEW</div>
+
                   <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="class52">
                     <button class="button button-basket" type="submit">В корзину</button>
@@ -218,7 +238,7 @@
               </li>
               <li class="catalog-item">
                 <div class="catalog-item-modal">
-                  <div class="new-item visually-hidden">NEW</div>
+
                   <img src="img/item-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="class52">
                     <button class="button button-basket" type="submit">В корзину</button>
@@ -238,7 +258,6 @@
               <li class="catalog-item">
 
                 <div class="catalog-item-modal">
-                  <div class="new-item visually-hidden">NEW</div>
                   <img src="img/item-3.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="class52">
                     <button class="button button-basket" type="submit">В корзину</button>
@@ -254,9 +273,9 @@
                   <span class="price">2 500 руб.</span>
                 </section>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <div class="catalog-item-modal">
-                  <div class="new-item">NEW</div>
+
                   <img src="img/item-4.jpg" width="360" height="380" alt="Любительская селфи-палка">
                   <div class="class52">
                     <button class="button button-basket" type="submit">В корзину</button>
@@ -275,13 +294,23 @@
             </ul>
           </section>
           <section class="pagination">
+            <div class="pagination-wrapper">
             <a href="#" class="pagination-back disabled">Назад</a>
-            <div class="pagination-number">
-              <a href="#" class="pagination-item current">1</a>
-              <a href="#" class="pagination-item">2</a>
-              <a href="#" class="pagination-item">3</a>
             </div>
+            <ul class="pagination-number">
+              <li>
+              <a href="#" class="pagination-item current">1</a>
+              </li>
+                <li>
+              <a href="#" class="pagination-item">2</a>
+              </li>
+                <li>
+              <a href="#" class="pagination-item">3</a>
+              </li>
+            </ul>
+            <div class="pagination-wrapper">
             <a href="#" class="pagination-next">Вперед</a>
+            </div>
           </section>
         </section>
 
