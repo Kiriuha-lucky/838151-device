@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_prefix.css" rel="stylesheet">
   </head>
 
   <body class="inner-page">
@@ -120,24 +120,25 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
             <fieldset class="filter-item">
-                    <legend class="visually-hidden">Стоимость:</legend>
-<b >Стоимость</b>
+              <legend class="visually-hidden">Стоимость:</legend>
+              <b >Стоимость</b>
 
-                    <div class="range-filter">
-                      <div class="range-controls">
-                        <div class="scale">
-                          <div class="bar"></div>
-                        </div>
-                        <div class="toggle toggle-min"></div>
-                        <div class="toggle toggle-max"></div>
-                      </div>
-                      <div class="price-controls">
-                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                        <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
-                      </div>
-                    </div>
-                  </fieldset>
-
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от
+                    <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до
+                    <input name="max-price" type="text" value="5000"></label>
+                </div>
+              </div>
+            </fieldset>
 
             <fieldset class="filter-item">
               <legend class="visually-hidden">Цвет</legend>
@@ -187,11 +188,8 @@
           <section class="catalog-catalog">
             <div class="catalog-title">
               <h3 class="visually-hidden">Сортировка</h3>
-
+              <b>Сортировка:</b>
               <ul class="sort">
-                <li>
-                  Сортировка:
-                </li>
                 <li>
                   <a href="#" class="active-item">По цене</a>
                 </li>
@@ -205,12 +203,12 @@
               <ul class="indicator">
                 <li >
                   <a href="#" class="indicator-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                   </a>
                 </li>
                 <li class="active">
                   <a href="#" class="indicator-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                   </a>
                 </li>
               </ul>
@@ -249,7 +247,8 @@
                 <section>
                   <h3>
                     <a href="#">
-                      Профессиональная селфи-палка
+                      Профессиональная
+                      <br>селфи-палка
                     </a>
                   </h3>
                   <span class="price">1 500 руб.</span>
@@ -285,7 +284,7 @@
                 <section>
                   <h3>
                     <a href="#">
-                      Селфи-палка "Следуй за мной"
+                      Селфи-палка &#171; Следуй за мной &#187;
                     </a>
                   </h3>
                   <span class="price">4 900 руб.</span>
@@ -295,21 +294,21 @@
           </section>
           <section class="pagination">
             <div class="pagination-wrapper">
-            <a href="#" class="pagination-back disabled">Назад</a>
+              <a href="#" class="pagination-back disabled">Назад</a>
             </div>
             <ul class="pagination-number">
               <li>
-              <a href="#" class="pagination-item current">1</a>
+                <a href="#" class="pagination-item current">1</a>
               </li>
-                <li>
-              <a href="#" class="pagination-item">2</a>
+              <li>
+                <a href="#" class="pagination-item">2</a>
               </li>
-                <li>
-              <a href="#" class="pagination-item">3</a>
+              <li>
+                <a href="#" class="pagination-item">3</a>
               </li>
             </ul>
             <div class="pagination-wrapper">
-            <a href="#" class="pagination-next">Вперед</a>
+              <a href="#" class="pagination-next">Вперед</a>
             </div>
           </section>
         </section>
@@ -320,15 +319,15 @@
     <footer class="main-footer">
       <div class="main-footer-wrapper">
         <section class="footer-logo-navigation">
-          <a href="#top" class="footer-logo">Device</a>
+          <a href="index.html" class="footer-logo">Device</a>
           <div class="navigation-wrapper">
             <ul class="footer-user-navigation">
               <li class="footer-login-link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewbox="0 0 13 12"><path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
-                <a href="#">Валентин Петухов</a>
+                <a href="#" class="footer-user">Валентин Петухов</a>
               </li>
               <li>
-                <a href="#">Выйти</a>
+                <a href="#" class="footer-exit">Выйти</a>
               </li>
             </ul>
             <ul class="footer-shop-navigation">
@@ -397,7 +396,9 @@
             </li>
           </ul>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-HTML-Academy-logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewbox="0 0 26.943 34.09"><path
+              fill="#FFC600"
+              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
 
           </a>
         </section>
