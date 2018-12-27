@@ -20,6 +20,7 @@
 }
 
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
@@ -28,6 +29,9 @@ body {
   font-weight: bold;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.01em;
+}
+.inner-page {
+  min-width: 1440px;
 }
 
 a {
@@ -68,9 +72,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-  width: 1044px;
-  margin: 0 auto;
   padding: 0;
+  margin-left: 58px;
   margin-top: -25px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 48px;
@@ -537,8 +540,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  width: 1440px;
-  margin: 0 auto;
+
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -2002,8 +2004,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container-services {
-  width: 1440px;
-  margin: 0 auto;
+
   margin-top: 182px;
   padding-top: 100px;
   padding-bottom: 69px;
@@ -2082,7 +2083,6 @@ input[type="radio"].visually-hidden {
 
 .slides-2 {
   position: absolute;
-  width: 880px;
   opacity: 0;
 }
 
