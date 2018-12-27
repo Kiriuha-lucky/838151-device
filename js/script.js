@@ -3,6 +3,8 @@ var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-map-close");
 
 var name = popup.querySelector("[name=name-surname]");
+var email = popup.querySelector("[name=e-mail]");
+var message = popup.querySelector("[name=write-us-text]");
 
 write.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -13,7 +15,17 @@ write.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  popup.classList.remove("modal-error");
 });
+
+popup.addEventListener("submit", function (evt) {
+    if (!name.value || !email.value||!message.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+    }
+  });
 
 window.addEventListener("keydown", function(evt) {
 
@@ -21,6 +33,7 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     }
   }
 });
