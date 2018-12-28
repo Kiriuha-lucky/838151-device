@@ -333,6 +333,10 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.site-navigation-item a:focus+.sub-menu {
+  display: flex;
+}
+
 .user-navigation a {
   position: relative;
   padding-left: 10px;
@@ -518,11 +522,13 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.firms:hover img:nth-child(1n) {
+.firms:hover img:nth-child(1n),
+.firms:focus img:nth-child(1n) {
   display: none;
 }
 
-.firms:hover img:nth-child(2n) {
+.firms:hover img:nth-child(2n),
+.firms:focus img:nth-child(2n) {
   display: block;
 }
 
