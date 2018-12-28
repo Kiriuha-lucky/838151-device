@@ -413,24 +413,15 @@ input[type="radio"].visually-hidden {
 }
 
 .slide {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   display: flex;
   width: 100%;
+  display: none;
 }
 
-.slider-slide-1 {
-  opacity: 0;
-}
 
-.slider-slide-2 {
-  opacity: 0;
-}
-
-.slider-slide-3 {
-  opacity: 0;
-}
 
 .slider-controls label {
   position: relative;
@@ -467,15 +458,15 @@ input[type="radio"].visually-hidden {
 }
 
 #btn-1:checked~.slider-wrapper .slider-slide-1 {
-  opacity: 1;
+  display: flex;
 }
 
 #btn-2:checked~.slider-wrapper .slider-slide-2 {
-  opacity: 1;
+    display: flex;
 }
 
 #btn-3:checked~.slider-wrapper .slider-slide-3 {
-  opacity: 1;
+  display: flex;
 }
 
 .container-slider .button:active {
@@ -483,7 +474,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-description b {
-  width: 396px;
+  width: 505px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
