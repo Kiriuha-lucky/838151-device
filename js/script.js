@@ -2,14 +2,14 @@ var write = document.querySelector(".button-contacts");
 var popup = document.querySelector(".modal-write-us");
 var close = popup.querySelector(".modal-map-close");
 
-var name = popup.querySelector("[name=name-surname]");
+var login = popup.querySelector("[name=name-surname]");
 var email = popup.querySelector("[name=e-mail]");
 var message = popup.querySelector("[name=write-us-text]");
 
 write.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  name.focus();
+  login.focus();
 });
 
 close.addEventListener("click", function(evt) {
@@ -19,11 +19,12 @@ close.addEventListener("click", function(evt) {
 });
 
 popup.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value||!message.value) {
+    if (!login.value || !email.value||!message.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
+      console.log("Нужно ввести логин и пароль");
     }
   });
 
