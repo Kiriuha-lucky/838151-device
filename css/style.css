@@ -30,6 +30,7 @@ body {
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.01em;
 }
+
 .inner-page {
   min-width: 1440px;
 }
@@ -425,8 +426,6 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-
-
 .slider-controls label {
   position: relative;
   display: inline-block;
@@ -466,7 +465,7 @@ input[type="radio"].visually-hidden {
 }
 
 #btn-2:checked~.slider-wrapper .slider-slide-2 {
-    display: flex;
+  display: flex;
 }
 
 #btn-3:checked~.slider-wrapper .slider-slide-3 {
@@ -550,7 +549,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-
   font-family: "OpenSans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -1492,14 +1490,15 @@ input[type="radio"].visually-hidden {
   width: 900px;
   background-color: rgba(255, 255, 255, 1);
 }
+
 .radio:hover+label:before,
 .radio:focus+label:before {
-border: 3px solid rgba(0, 0, 0, 0.6);
+  border: 3px solid rgba(0, 0, 0, 0.6);
 }
 
 .radio:hover+label:after,
 .radio:focus+label:after {
-background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .filters-catalog-title {
@@ -2006,14 +2005,12 @@ background-color: rgba(0, 0, 0, 0.6);
 .write-us-item input:hover,
 .write-us-item textarea:hover {
   background-color: rgba(229, 229, 229, 0.8);
-
 }
 
 .write-us-item input:focus,
 .write-us-item textarea:focus {
   background-color: rgba(255, 255, 255, 1);
   outline: 2px solid rgba(240, 197, 46, 0.5);
-
 }
 
 .write-us-item input:invalid {
@@ -2033,7 +2030,6 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 .container-services {
-
   margin-top: 182px;
   padding-top: 100px;
   padding-bottom: 69px;
@@ -2180,6 +2176,7 @@ background-color: rgba(0, 0, 0, 0.6);
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
