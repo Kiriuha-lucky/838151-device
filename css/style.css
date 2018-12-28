@@ -196,6 +196,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  flex-wrap: wrap;
   width: 260px;
   margin: 0;
   padding: 0;
@@ -205,6 +206,7 @@ input[type="radio"].visually-hidden {
 .shop-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 214px;
   margin: 0;
   padding: 0;
@@ -326,7 +328,8 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0;
 }
 
-.site-navigation-item:hover .sub-menu {
+.site-navigation-item:hover .sub-menu,
+.site-navigation-item:focus .sub-menu {
   display: flex;
 }
 
@@ -603,6 +606,7 @@ input[type="radio"].visually-hidden {
 .footer-user-navigation {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
   width: 246px;
   margin: 0;
   padding: 0;
@@ -628,6 +632,7 @@ input[type="radio"].visually-hidden {
 .footer-shop-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 212px;
   margin: 0;
   padding: 0;
@@ -1405,6 +1410,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
+.checkbox:hover+label:before,
+.checkbox:focus+label:before {
+  opacity: 0.6;
+}
+
 .checkbox:checked+label:active::before {
   background-image: url("../img/checkbox-off.svg");
 }
@@ -1484,6 +1494,15 @@ input[type="radio"].visually-hidden {
 .catalog {
   width: 900px;
   background-color: rgba(255, 255, 255, 1);
+}
+.radio:hover+label:before,
+.radio:focus+label:before {
+border: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+.radio:hover+label:after,
+.radio:focus+label:after {
+background-color: rgba(0, 0, 0, 0.6);
 }
 
 .filters-catalog-title {
