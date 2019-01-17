@@ -1,0 +1,22 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "* Студент: [Кирилл Мальцев](https://up.htmlacademy.ru/htmlcss/23/user/838151). * Наставник: [Артём Ильченко](https://htmlacademy.ru/profile/id375383).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiriuha-lucky/838151-device.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiriuha-lucky/838151-device/issues"
+  },
+  "homepage": "https://github.com/Kiriuha-lucky/838151-device#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
